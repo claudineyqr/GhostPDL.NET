@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<IsPackable>true</IsPackable>
+		<LangVersion>latest</LangVersion>
+		<PackageVersion>1.0.0-rc2</PackageVersion>
+		<PackageId>GhostPDL.NET</PackageId>
+		<Title>GhostPDL.NET</Title>
+		<Authors>Claudiney Queiroz</Authors>
+		<Owners>Claudiney Queiroz</Owners>
+		<Description>Convert and create PDFs using GhostPDL with C# and .NET</Description>
+		<PackageProjectUrl>https://github.com/claudineyqr/GhostPDL.NET</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/claudineyqr/GhostPDL.NET</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>GhostPDL.NET GhostPDL .NET dotnet PDF/A PDFA PDF</PackageTags>
+		<PackageLicenseExpression>AGPL-3.0-only</PackageLicenseExpression>
+		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+		<SignAssembly>true</SignAssembly>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<Copyright>Copyright © 2023 Claudiney Queiroz.</Copyright>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="GhostPDL.NET.Native" Version="10.0.0-rc2" />
+	</ItemGroup>
+
+</Project>
