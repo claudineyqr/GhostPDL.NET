@@ -1,5 +1,7 @@
 # GhostPDL.NET
 
+[![NuGet](https://img.shields.io/nuget/v/GhostPDL.NET)](https://nuget.org/packages/GhostPDL.NET) [![Nuget](https://img.shields.io/nuget/dt/GhostPDL.NET)](https://nuget.org/packages/GhostPDL.NET)
+
 Convert and create PDFs using [GhostPDL](https://ghostscript.readthedocs.io) with C# and .NET
 
 ## Give a Star!
@@ -13,17 +15,6 @@ GhostPDL.NET can be installed using the Nuget package manager or the dotnet CLI.
 ```
 dotnet add package GhostPDL.NET
 ```
-
-```
-Install-Package GhostPDL.NET
-```
-
----
-
-| Package               | Version                                                                                                        | Popularity                                                                                                      |
-| --------------------- | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `GhostPDL.NET`        | [![NuGet](https://img.shields.io/nuget/v/GhostPDL.NET)](https://nuget.org/packages/GhostPDL.NET)               | [![Nuget](https://img.shields.io/nuget/dt/GhostPDL.NET)](https://nuget.org/packages/GhostPDL.NET)               |
-| `GhostPDL.NET.Native` | [![NuGet](https://img.shields.io/nuget/v/GhostPDL.NET.Native)](https://nuget.org/packages/GhostPDL.NET.Native) | [![Nuget](https://img.shields.io/nuget/dt/GhostPDL.NET.Native)](https://nuget.org/packages/GhostPDL.NET.Native) |
 
 ### Examples
 
