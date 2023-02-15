@@ -4,7 +4,7 @@
 		<TargetFramework>netcoreapp3.1</TargetFramework>
 		<IsPackable>true</IsPackable>
 		<LangVersion>latest</LangVersion>
-		<PackageVersion>1.0.0-rc2</PackageVersion>
+		<PackageVersion>1.0.0</PackageVersion>
 		<PackageId>GhostPDL.NET</PackageId>
 		<Title>GhostPDL.NET</Title>
 		<Authors>Claudiney Queiroz</Authors>
@@ -23,11 +23,11 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+		<None Include="..\..\README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="GhostPDL.NET.Native" Version="10.0.0-rc2" />
+		<PackageReference Include="GhostPDL.NET.Native" Version="10.0.0.1" />
 	</ItemGroup>
 
 </Project>
