@@ -27,10 +27,10 @@ namespace GhostPDL.NET.Utils
                     return NativeLibrary.Load("gpdldll64.dll", assembly, searchPath);
 
                 if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
-                    return NativeLibrary.Load("libgpdl.so", assembly, searchPath);
+                    return NativeLibrary.Load("libgpdl.so.10.00", assembly, searchPath);
 
                 if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
-                    return NativeLibrary.Load("libgpdl.dylib", assembly, searchPath);
+                    return NativeLibrary.Load("libgpdl.dylib.10.00", assembly, searchPath);
             }
             return IntPtr.Zero;
         }
