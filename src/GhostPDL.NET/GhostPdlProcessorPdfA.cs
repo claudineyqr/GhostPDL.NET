@@ -24,10 +24,11 @@ namespace GhostPDL.NET
         }
 
         /// <summary>
-        /// Convert document to PDF/A
+        /// Convert document PDF/X to PDF/A
         /// </summary>
         /// <param name="fileBytes"></param>
         /// <param name="pdfAProfile"></param>
+        /// <param name="debugOptions"></param>
         /// <returns></returns>
         public async Task<byte[]> ConvertAsync(
             byte[] fileBytes,
