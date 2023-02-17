@@ -18,7 +18,7 @@ dotnet add package GhostPDL.NET
 
 ### Examples
 
-Convert PDF/X to PDF/A
+**Convert PDF/X to PDF/A**
 
 ```
 var pdfContentByte = await File.ReadAllBytesAsync("sample1.pdf");
@@ -27,7 +27,9 @@ var ghostProcessor = new GhostPdlProcessorPdfA();
 byte[] rawPdfA = await ghostProcessor.ConvertAsync(pdfContentByte, PdfAProfile.A2B);
 ```
 
-Run commands [Ghostscript](https://ghostscript.readthedocs.io/en/latest/Use.html)
+To validate PDF/A result use the [Codeuctivity.PdfAValidator](https://github.com/Codeuctivity/PdfAValidatorApi)
+
+**Run commands** [Ghostscript](https://ghostscript.readthedocs.io/en/latest/Use.html)
 
 ```
 var switches = new List<string>
