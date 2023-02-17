@@ -29,7 +29,13 @@ byte[] rawPdfA = await ghostProcessor.ConvertAsync(pdfContentByte, PdfAProfile.A
 
 To validate PDF/A result use the [Codeuctivity.PdfAValidator](https://github.com/Codeuctivity/PdfAValidatorApi)
 
-**Run commands** [Ghostscript](https://ghostscript.readthedocs.io/en/latest/Use.html)
+**Run commands Ghostscript**
+
+Documentation Ghostscript:
+
+- https://ghostscript.com
+- https://ghostscript.readthedocs.io/en/gs10.0.0/
+- https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs1000/Ghostscript.pdf
 
 ```
 var switches = new List<string>
