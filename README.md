@@ -56,9 +56,9 @@ ghostProcessor.InvokeCommand(switches);
 ## Support
 
 - win-x64
-- linux-x64
-- linux-arm64
-- osx-x64
+- linux-x64 (Debian 11>, Ubuntu 20.04>, Red Hat Enterprise Linux 7>)
+- linux-arm64 (Debian 11>, Ubuntu 20.04>)
+- osx-x64 (10.15>)
 
 ## About
 
