@@ -32,7 +32,7 @@ namespace GhostPDL.NET
         /// <returns></returns>
         public async Task<byte[]> ConvertAsync(
             byte[] fileBytes,
-            PdfAProfile pdfAProfile = PdfAProfile.A2B,
+            PdfAProfile pdfAProfile = PdfAProfile.A1B,
             IEnumerable<DebugOption> debugOptions = null)
         {
             string fileTempInput = await CreateTempFile(fileBytes);

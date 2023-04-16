@@ -36,14 +36,9 @@ namespace GhostPDL.NET.Utils
             {
                 var switchesBase = GetCommandsBase();
 
-                if (debugOptions != null &&
-                    debugOptions.All(x => x != DebugOption.None))
-                {
-                    var debugOptionsValids = debugOptions.Select(x => $"-d{x}").ToList();
-                    switchesBase.AddRange(debugOptionsValids);
-                }
-
+                switchesBase.AddRange(GetSwitchesDebug(debugOptions));
                 switchesBase.AddRange(switches);
+
                 string[] argsArray = switchesBase.Distinct().ToArray();
 
                 int code = GhostPdlNativeLibrary.InitWithArgs(instance, argsArray.Length, argsArray);
@@ -102,6 +97,28 @@ namespace GhostPDL.NET.Utils
                 "-dCompatibilityLevel=1.7"
             };
             return args;
+        }
+
+        private static IEnumerable<string> GetSwitchesDebug(IEnumerable<DebugOption> debugOptions)
+        {
+            var switchesDebug = new List<string>();
+
+            if (debugOptions != null &&
+                debugOptions.Any())
+            {
+                if (debugOptions.Any(x => x == DebugOption.All))
+                {
+                    switchesDebug.Add("-dDEBUG");
+                }
+                else
+                {
+                    switchesDebug = debugOptions
+                        .Select(x => $"-d{x}")
+                        .Distinct()
+                        .ToList();
+                }
+            }
+            return switchesDebug;
         }
     }
 }

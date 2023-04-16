@@ -9,14 +9,9 @@ namespace GhostPDL.NET.Utils
     public enum DebugOption
     {
         /// <summary>
-        /// Disable debug
+        /// Set all of the subset switches DEBUG
         /// </summary>
-        None,
-
-        /// <summary>
-        /// Set all of the subset switches
-        /// </summary>
-        DEBUG,
+        All,
 
         /// <summary>
         /// Compiled Fonts
