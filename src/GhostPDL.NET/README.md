@@ -1,7 +1,5 @@
 # GhostPDL.NET
 
-[![NuGet](https://img.shields.io/nuget/v/GhostPDL.NET)](https://nuget.org/packages/GhostPDL.NET) [![Nuget](https://img.shields.io/nuget/dt/GhostPDL.NET)](https://nuget.org/packages/GhostPDL.NET) [![Donate](https://img.shields.io/static/v1?label=Paypal&message=Donate&color=informational)](https://www.paypal.com/donate/?hosted_button_id=4CTJ6CTWHGUMA)
-
 Convert and create PDFs using [GhostPDL](https://ghostscript.readthedocs.io) with C# and .NET
 
 ## Get Started
